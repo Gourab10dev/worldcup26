@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    text-align:center;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url("articles-fifa-world-cup-trionda-ball.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:120px 20px 30px 20px;
+}
+
+.dis-wc-logo{
+    width:150px;
+    display:block;
+    
+}
+
+/* ===== Navbar ===== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    width:100%;
+}
+
+.dis-wc-logo{
+    width:100px;
+    height:auto;
+    margin:0;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap: 25px;
+    margin:0;
+    padding:0;
+}
+
+.navbar ul li{
+    margin:0;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    color:#6d79fd;
+}
+
+.slider{
+    width:100%;
+    max-width:800px;
+    margin:100px auto 40px auto;
+}
+
+.slide{
+    width:100%;
+    height:750px;
+    object-fit:cover;
+    display:none;
+    border-radius:15px;
+    box-shadow: 
+    0 0 10px #3e3f46,
+    0 0 25px #525366,
+    0 0 50px #7579a5;
+}
+
+.slide.active{
+    display:block;
+}
+
+h2{
+    margin:35px 0;
+    font-size:2rem;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.join-btn{
+    background:#5865F2;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:12px;
+    font-size:20px;
+    cursor:pointer;
+
+    box-shadow:
+    0 0 10px #5865F2,
+    0 0 25px #5865F2,
+    0 0 50px #5865F2;
+}
+
+.join-btn:hover{
+    transform:translateY(-3px) scale(1.05);
+}
+
+/* ===== Desktop Enhancements ===== */
+
+@media (min-width: 992px){
+
+    .container{
+        padding-top:40px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:2.2rem;
+    }
+
+    .logo{
+        width:220px;
+    }
+
+    .wc-logo{
+        width:420px;
+    }
+
+    .discord-btn,
+    .join-btn{
+        font-size:22px;
+        padding:18px 50px;
+    }
+}
+
+/* ===== Tablet ===== */
+
+@media (max-width: 991px){
+
+    .slide{
+        height:350px;
+    }
+
+    h1{
+        font-size:2.3rem;
+    }
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .navbar ul{
+        gap:20px;
+    }
+
+    .dis-wc-logo{
+        width:90px;
+    }
+
+    .logo{
+        width:140px;
+    }
+
+    .wc-logo{
+        width:200px;
+    }
+
+    h1{
+        font-size:1.6rem;
+    }
+
+    h2{
+        font-size:1.4rem;
+    }
+
+    .slide{
+        height:800px;
+    }
+
+    .discord-btn,
+    .join-btn{
+        width:90%;
+        max-width:200px;
+        font-size:18px;
+        padding:14px;
+    }
+}
+
+/* ===== Small Phones ===== */
+
+@media (max-width: 480px){
+
+    .slide{
+        height:200px;
+    }
+
+    h1{
+        font-size:1.3rem;
+    }
+
+    h2{
+        font-size:1.2rem;
+    }
+}
