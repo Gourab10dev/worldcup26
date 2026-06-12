@@ -225,6 +225,11 @@ h2{
 
 @media (max-width: 480px){
 
+    .logo{
+        width:100px;
+        max-width:90%;
+    }
+
     .slide{
         height:200px;
     }
