@@ -37,6 +37,6 @@ function toggleMenu() {
 // Discord button
 function joinDiscord() {
     window.open(
-        "https://discord.gg/683REnq2"
+        "https://discord.gg/4exQrGSjWs"
     );
 }
