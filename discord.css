@@ -122,6 +122,16 @@ h2{
     transform:translateY(-3px) scale(1.05);
 }
 
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    font-size: 14px;
+}
+
 /* ===== Desktop Enhancements ===== */
 
 @media (min-width: 992px){

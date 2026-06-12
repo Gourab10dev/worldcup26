@@ -144,6 +144,15 @@ h2{
     vertical-align:middle;
     margin-right:5px;
 }
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    font-size: 14px;
+}
 
 /* ===== Desktop Enhancements ===== */
 
