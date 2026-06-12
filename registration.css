@@ -6,63 +6,57 @@ box-sizing:border-box;
 
 body{
 min-height:100vh;
-
-
 display:flex;
-justify-content:center;
-align-items:center;
-
+flex-direction:column;
 background:
 linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
 url("articles-fifa-world-cup-trionda-ball.jpg");
 
 background-size:cover;
 background-position:center;
-
-font-family:'Oxanium',sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 color:white;
-
 }
+
 
 .container{
 width:90%;
-max-width:450px;
-
-
-padding:30px;
-
-background:rgba(0,0,0,.65);
-
-border-radius:20px;
+max-width:350px;
+margin:80px auto 40px auto;
+padding:20px;
+background:rgba(0,0,0,0.45);
+border-radius:15px;
 
 box-shadow:
 0 0 15px rgba(88,101,242,.5),
 0 0 30px rgba(88,101,242,.3);
 
 text-align:center;
-
 }
 
+
 h1{
-margin-bottom:10px;
-font-size:2rem;
+margin-bottom:5px;
+font-size:1.6rem;
+font-family: 'Oxanium', sans-serif;
 }
 
 h2{
-margin-bottom:25px;
-font-size:1.2rem;
+margin-bottom:15px;
+font-size:1rem;
+font-family: 'Oxanium', sans-serif;
 }
 
 input{
 width:100%;
 
-padding:15px;
-margin:10px 0;
+padding:12px;
+margin:8px 0;
 
 border:none;
-border-radius:12px;
+border-radius:10px;
 
-font-size:16px;
+font-size:15px;
 outline:none;
 
 }
@@ -72,7 +66,7 @@ box-shadow:
 0 0 10px #5865F2;
 }
 
-.register-btn{
+.submit-btn{
 width:100%;
 
 margin-top:15px;
@@ -96,14 +90,14 @@ box-shadow:
 
 }
 
-.register-btn:hover{
+.submit-btn:hover{
 transform:scale(1.03);
 }
 
 /* Fiery Logo */
 
 .logo{
-    width:130px;
+    width:120px;
     display:block;
     margin:0 auto 20px;
 
@@ -131,10 +125,94 @@ transform:scale(1.03);
     }
 }
 
-@media(max-width:480px){
+/* FOOTER */
+footer{
+    width:100%;
+    background:rgba(0,0,0,0.8);
+
+    border-top:1px solid rgba(255,215,0,0.3);
+    box-shadow:
+    0 -5px 20px rgba(255,215,0,0.1);
+
+    padding:10px ;
+    margin-top:20px;
+    text-align:center;
+    font-size:14px;
+}
+
+
+/* ========DESKTOP======= */
+
+@media (min-width:992px){
 
 .container{
-    width:95%;
+    max-width:420px;
+    padding:25px;
+    margin:100px auto 40px auto;
+}
+
+.logo{
+    width:130px;
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.2rem;
+}
+
+input{
+    font-size:16px;
+    padding:14px;
+}
+
+.submit-btn{
+    font-size:18px;
+}
+
+footer{
+    font-size:14px;
+}
+
+}
+
+/* ========TABLET======== */
+
+@media (max-width:991px){
+
+.container{
+    max-width:400px;
+    margin:80px auto 35px auto;
+}
+
+.logo{
+    width:120px;
+}
+
+h1{
+    font-size:1.8rem;
+}
+
+h2{
+    font-size:1.1rem;
+}
+
+footer{
+    font-size:13px;
+}
+
+}
+
+/* ========MOBILE======= */
+
+@media (max-width:768px){
+
+.container{
+    width:92%;
+    max-width:350px;
+    margin:60px auto 30px auto;
     padding:20px;
 }
 
@@ -151,11 +229,65 @@ h2{
 }
 
 input{
+    padding:12px;
     font-size:14px;
 }
 
-.register-btn{
+.submit-btn{
+    width:100%;
+    font-size:16px;
+    padding:14px;
+}
+
+footer{
+    font-size:12px;
+}
+
+}
+
+/* =======SMALL PHONES======== */
+
+@media (max-width:480px){
+
+.container{
+    width:95%;
+    max-width:320px;
+    margin:40px auto 25px auto;
+    padding:18px;
+}
+
+.logo{
+    width:90px;
+}
+
+h1{
+    font-size:1.3rem;
+    line-height:1.4;
+}
+
+h2{
+    font-size:0.95rem;
+}
+
+input{
+    padding:10px;
+    font-size:13px;
+}
+
+.submit-btn{
+    font-size:15px;
+    padding:12px;
+}
+
+footer{
+    font-size:10px;
+    padding:8px;
+}
+
+.submit-btn{
     font-size:16px;
 }
 
 }
+
+

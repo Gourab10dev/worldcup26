@@ -129,13 +129,17 @@ h2{
 }
 
 /* FOOTER */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-top: auto;
-    font-size: 14px;
+footer{
+    width:100%;
+    padding:10px;
+    background:rgba(0,0,0,0.8);
+
+    border-top:
+    1px solid rgba(255,215,0,0.3);
+    box-shadow:
+    0 -5px 20px rgba(255,215,0,0.1);
+
+    font-size:14px;
 }
 
 /* ===== Desktop Enhancements ===== */
