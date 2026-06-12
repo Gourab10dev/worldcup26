@@ -239,6 +239,9 @@ footer {
         width: 180px;
     }
 
+    .slider{
+    margin:25px auto;
+
     h1{
         font-size:1.3rem;
     }
