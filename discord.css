@@ -215,6 +215,11 @@ h2{
 
 @media (max-width: 480px){
 
+    .slider{
+    width:100%;
+    max-width:800px;
+    margin:40px auto 40px auto;
+}
     .slide{
         height:350px;
         
