@@ -229,7 +229,26 @@ footer {
 
 /* ===== Small Phones ===== */
 
-@media (max-width:480px){
+@media (max-width: 480px){
+
+    .slider{
+    width:100%;
+    max-width:800px;
+    margin:40px auto 40px auto;
+}
+    .slide{
+        height:350px;
+        
+    }
+
+    h1{
+        font-size:1.3rem;
+        margin: 20px;
+    }
+
+    h2{
+        font-size:1.2rem;
+    }
 
     .navbar{
         position:fixed;
@@ -242,10 +261,6 @@ footer {
         justify-content:space-between;
         align-items:center;
         z-index:1000;
-    }
-
-    .dis-wc-logo{
-        width:70px;
     }
 
     .menu-btn{
@@ -280,5 +295,14 @@ footer {
     .navbar ul li a{
         font-size:16px;
     }
-}
 
+    footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    font-size: 10px;
+    }
+
+}

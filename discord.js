@@ -2,7 +2,7 @@ const slides = document.querySelectorAll(".slide");
 
 let currentSlide = 0;
 
-function showSlide(index){
+function showSlide(index) {
 
     slides.forEach(slide => {
         slide.classList.remove("active");
@@ -11,25 +11,32 @@ function showSlide(index){
     slides[index].classList.add("active");
 }
 
-setInterval(() => {
+// Only run slider if slides exist
+if (slides.length > 0) {
 
-    currentSlide++;
+    showSlide(0);
 
-    if(currentSlide >= slides.length){
-        currentSlide = 0;
-    }
+    setInterval(() => {
 
-    showSlide(currentSlide);
+        currentSlide++;
 
-}, 3000);
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
 
-function toggleMenu(){
+        showSlide(currentSlide);
+
+    }, 3000);
+}
+
+// Mobile menu
+function toggleMenu() {
     document.getElementById("mobileMenu").classList.toggle("show");
 }
 
-function joinDiscord(){
-
-window.location.href =
-"https://discord.gg/683REnq2";
-
+// Discord button
+function joinDiscord() {
+    window.open(
+        "https://discord.gg/683REnq2"
+    );
 }
