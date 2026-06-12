@@ -240,7 +240,10 @@ footer {
     }
 
     .slider{
-    margin:25px auto;
+    width:100%;
+    max-width:300px;
+    margin:50px auto;
+    }
 
     h1{
         font-size:1.3rem;
