@@ -23,6 +23,9 @@ setInterval(() => {
 
 }, 3000);
 
+function toggleMenu(){
+    document.getElementById("mobileMenu").classList.toggle("show");
+}
 
 function joinDiscord(){
 
