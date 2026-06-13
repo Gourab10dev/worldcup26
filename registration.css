@@ -46,6 +46,10 @@ font-size:1rem;
 font-family: 'Oxanium', sans-serif;
 }
 
+input::placeholder{
+    color: rgba(255, 255, 255, 0.795);
+}
+
 input{
 width:100%;
 
@@ -54,7 +58,13 @@ margin:5px 0;
 
 border:none;
 border-radius:10px;
+background:rgba(0, 0, 0, 0.377);
 
+border:1px solid rgba(255, 255, 255, 0.507);
+box-shadow:
+    0 -5px 20px rgba(0, 4, 255, 0.384);
+
+color:rgba(255, 255, 255, 0.767);
 font-size:15px;
 outline:none;
 
