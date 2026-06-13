@@ -280,13 +280,8 @@ input{
 }
 
 footer{
-    width:100%;
-    padding:12px 8px;
-    margin-top:30px;
-    font-size:11px;
-    line-height:1.5;
-    text-align:center;
-    word-wrap:break-word;
+    font-size:10px;
+    padding:8px;
 }
 
 .submit-btn{
