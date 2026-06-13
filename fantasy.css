@@ -161,3 +161,155 @@ footer{
     font-size:14px;
 }
 
+
+/* ======== TABLET (769px - 991px) ========*/
+
+@media (max-width:991px){
+
+h1{
+    font-size:2.2rem;
+    margin:25px;
+}
+
+h2{
+    font-size:1.7rem;
+}
+
+.fantasy-rules{
+    width:95%;
+}
+
+.intro{
+    font-size:1rem;
+}
+
+.rule-card{
+    padding:20px;
+}
+
+.register-btn{
+    font-size:18px;
+    padding:14px 35px;
+}
+
+footer{
+    font-size:13px;
+}
+
+
+}
+
+/* ======== MOBILE (481px - 768px) ======== */
+
+@media (max-width:768px){
+
+
+h1{
+    font-size:1.8rem;
+    margin:20px 15px;
+}
+
+h2{
+    font-size:1.3rem;
+}
+
+.fantasy-rules{
+    width:95%;
+    padding:20px 10px;
+}
+
+.intro{
+    font-size:0.95rem;
+    line-height:1.7;
+}
+
+.rule-card{
+    padding:15px;
+    margin:20px 0;
+}
+
+.rule-card ul{
+    padding-left:18px;
+}
+
+th,td{
+    padding:8px;
+    font-size:13px;
+}
+
+.register-btn{
+    width:90%;
+    max-width:280px;
+    font-size:17px;
+    padding:14px;
+    margin-bottom:40px;
+}
+
+footer{
+    font-size:12px;
+    padding:10px;
+}
+
+
+}
+
+/* ======== SMALL PHONES (480px and below) ======== */
+
+@media (max-width:480px){
+
+h1{
+    font-size:1.4rem;
+    margin:15px 10px;
+    line-height:1.4;
+}
+
+h2{
+    font-size:1rem;
+}
+
+.fantasy-rules{
+    width:96%;
+    padding:15px 5px;
+}
+
+.intro{
+    font-size:0.85rem;
+    line-height:1.6;
+}
+
+.rule-card{
+    padding:12px;
+    margin:15px 0;
+    border-radius:15px;
+}
+
+.rule-card ul{
+    padding-left:15px;
+    font-size:14px;
+}
+
+table{
+    font-size:11px;
+}
+
+th,td{
+    padding:6px;
+}
+
+.register-btn{
+    width:90%;
+    max-width:220px;
+    font-size:15px;
+    padding:12px;
+    margin-bottom:25px;
+}
+
+footer{
+    font-size:10px;
+    padding:8px;
+    line-height:1.5;
+}
+
+}
+
+
