@@ -274,8 +274,11 @@ footer{
         font-size:1.2rem;
     }
     footer {
-    background: #333;
-    color: white;
+    background:rgba(0,0,0,0.8);
+
+    border-top:1px solid rgba(255,215,0,0.3);
+    box-shadow:
+    0 -5px 20px rgba(255,215,0,0.1);
     text-align: center;
     padding: 5px;
     margin-top: auto;
