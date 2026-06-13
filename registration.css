@@ -251,7 +251,7 @@ footer{
 .container{
     height:auto;
     min-height:auto;
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 
 
@@ -286,7 +286,7 @@ footer {
     0 -5px 20px rgba(255,215,0,0.1);
     text-align: center;
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 10px;
     }
 
