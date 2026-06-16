@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>World Cup Madness Fantasy League</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CreatBestXI.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>⚽ WORLD CUP MADNESS FANTASY ⚽</h1>
+
+</header>
+
+<!-- TOP CONTROL BAR -->
+
+<section class="top-bar">
+
+    <div class="formation-box">
+
+        <label>FORMATION</label>
+
+        <select id="formationSelect">
+
+            <option value="433">4-3-3</option>
+            <option value="442">4-4-2</option>
+            <option value="4231">4-2-3-1</option>
+            <option value="343">3-4-3</option>
+            <option value="3421">3-4-2-1</option>
+
+        </select>
+
+    </div>
+
+</section>
+
+<!-- MAIN AREA -->
+
+<div class="main-layout">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left-panel">
+
+        <!-- MANAGER -->
+
+        <div class="manager-card">
+
+            <div class="manager-image">
+
+                👔
+
+            </div>
+
+            <h3>Manager</h3>
+
+            <p>Drop Manager</p>
+
+        </div>
+
+    </div>
+
+    <!-- CENTER PITCH -->
+
+    <div class="pitch-container">
+
+        <div class="pitch">
+
+            <!-- JS WILL GENERATE FORMATION -->
+
+            <div id="formationArea">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="market-panel">
+
+        <h2>PLAYER MARKET</h2>
+
+        <!-- POSITION FILTERS -->
+
+        <div class="position-tabs">
+
+            <button class="pos-btn active" data-pos="ST">ST</button>
+
+            <button class="pos-btn" data-pos="CF">CF</button>
+
+            <button class="pos-btn" data-pos="LW">LW</button>
+
+            <button class="pos-btn" data-pos="RW">RW</button>
+
+            <button class="pos-btn" data-pos="CAM">CAM</button>
+
+            <button class="pos-btn" data-pos="CDM">CDM</button>
+
+            <button class="pos-btn" data-pos="CB">CB</button>
+
+            <button class="pos-btn" data-pos="LB">LB</button>
+
+            <button class="pos-btn" data-pos="RB">RB</button>
+
+             <button class="pos-btn" data-pos="GK">GK</button>
+
+        </div>
+
+        <!-- PLAYER CARDS -->
+
+        <div id="playerMarket">
+
+            <!-- JS WILL LOAD PLAYERS -->
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- TEAM CONTROLS -->
+
+<section class="team-controls">
+
+    <button id="captainBtn">
+
+        Select Captain
+
+    </button>
+
+    <button id="viceCaptainBtn">
+
+        Select Vice Captain
+
+    </button>
+
+    <button id="saveTeamBtn">
+
+        Save Team
+
+    </button>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    ©2026 WORLD CUP MADNESS | Fantasy League
+
+</footer>
+
+<script src="player.js"></script>
+<script src="CreatBestXI.js"></script>
+
+</body>
+</html>
