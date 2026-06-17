@@ -18,21 +18,28 @@ const formations = {
 
 433: [
 ["LW","ST","RW"],
-["CDM","CAM","CAM"],
+["CM","CDM","CM"],
 ["LB","CB","CB","RB"],
 ["GK"]
 ],
 
 442: [
 ["ST","ST"],
-["LM","CDM","CDM","RM"],
+["LW","CDM","CDM","RW"],
 ["LB","CB","CB","RB"]
+["GK"]
+],
+
+235: [
+["LW","CF","CF","CF","RW"],
+["LB","CDM","RB"],
+["CB","CB"],
 ["GK"]
 ],
 
 4231: [
 ["ST"],
-["CDM","CDM"],
+["LAM","RAM"],
 ["LW","CAM","RW"],
 ["LB","CB","CB","RB"],
 ["GK"]
@@ -47,7 +54,7 @@ const formations = {
 
 3421: [
 ["ST"],
-["CDM","CDM","CAM","CAM"],
+["LAM","CDM","CDM","RAM"],
 ["CB","CB","CB"],
 ["GK"]
 ]
