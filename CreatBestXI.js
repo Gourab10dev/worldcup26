@@ -243,21 +243,17 @@ slot.addEventListener("drop", e => {
     const playerName =
     dragged.querySelector("h3").innerText;
 
-    if(slot.querySelector(".selected-player")){
-    alert("This position is already occupied!");
-    return;
-}
-
-    /* Check duplicates FIRST */
+    const currentPlayer =
+    slot.querySelector(".selected-player");
 
     const exists =
     [...document.querySelectorAll(".selected-player")]
     .some(player =>
-        player.dataset.name === playerName
+        player.dataset.name === playerName &&
+        player !== currentPlayer
     );
 
     if(exists){
-
         alert("Player already selected!");
         return;
     }
@@ -266,10 +262,10 @@ slot.addEventListener("drop", e => {
     dragged.querySelector("img").src;
 
     slot.innerHTML = `
-    <div class="selected-player"
-         data-name="${playerName}">
-        <img src="${imgSrc}">
-    </div>
+        <div class="selected-player"
+             data-name="${playerName}">
+            <img src="${imgSrc}">
+        </div>
     `;
 
     slot.classList.add("filled");
