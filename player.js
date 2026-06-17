@@ -249,7 +249,7 @@ img:"chobi/vini.png"
 {
 name:"L.Diaz",
 country:"🇵🇹 Portugal",
-img:"chobi/Ldiaz.png"
+img:"chobi/ldiaz.png"
 },
 
 {
