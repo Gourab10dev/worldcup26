@@ -5,31 +5,31 @@ GK: [
 {
 name:"E.Martinez",
 country:"Argentina",
-img:"players/alisson.png"
+img:"PP/martinez.png"
 },
 
 {
 name:"D.Raya",
 country:"🇦🇷 Argentina",
-img:"players/martinez.png"
+img:"PP/raya.png"
 },
 
 {
 name:"E.Garcia",
 country:"🇫🇷 France",
-img:"players/maignan.png"
+img:"PP/egarcia.png"
 },
 
 {
 name:"M.Maignan",
 country:"🇮🇹 Italy",
-img:"players/donnarumma.png"
+img:"PP/maignan.png"
 },
 
 {
 name:"T.Courtois",
 country:"🇩🇪 Germany",
-img:"players/neuer.png"
+img:"PP/courto.png"
 }
 
 ],
@@ -39,31 +39,31 @@ RB: [
 {
 name:"J.Timber",
 country:"🇲🇦 Morocco",
-img:"players/hakimi.png"
+img:"PP/timber.png"
 },
 
 {
 name:"J.Kunde",
 country:"🇪🇸 Spain",
-img:"players/carvajal.png"
+img:"PP/kunde.png"
 },
 
 {
 name:"J.Cancelo",
 country:"🏴 England",
-img:"players/trent.png"
+img:"PP/cancelo.png"
 },
 
 {
 name:"R.James",
 country:"🇫🇷 France",
-img:"players/kounde.png"
+img:"PP/james.png"
 },
 
 {
 name:"BEN White",
 country:"🇳🇱 Netherlands",
-img:"players/frimpong.png"
+img:"PP/ben.png"
 }
 
 ],
@@ -73,31 +73,31 @@ LB: [
 {
 name:"J.Gvardiol",
 country:"🇫🇷 France",
-img:"players/theo.png"
+img:"PP/gvardiol.png"
 },
 
 {
 name:"T.Hernandez",
 country:"🇨🇦 Canada",
-img:"players/davies.png"
+img:"PP/hernandez.png"
 },
 
 {
 name:"N.Mendes",
 country:"🇳🇱 Netherlands",
-img:"players/ake.png"
+img:"PP/mendes.png"
 },
 
 {
 name:"A.Sandro",
 country:"🇮🇹 Italy",
-img:"players/dimarco.png"
+img:"PP/sandro.png"
 },
 
 {
 name:"N.Mazaraoui",
 country:"🇪🇸 Spain",
-img:"players/grimaldo.png"
+img:"PP/mazra.png"
 }
 
 ],
@@ -107,31 +107,31 @@ CB: [
 {
 name:"D.Huijsen",
 country:"🇳🇱 Netherlands",
-img:"players/vandijk.png"
+img:"PP/huijsen.png"
 },
 
 {
 name:"W.Saliba",
 country:"🇫🇷 France",
-img:"players/saliba.png"
+img:"PP/saliba.png"
 },
 
 {
 name:"P.Cubarsi",
 country:"🇵🇹 Portugal",
-img:"players/dias.png"
+img:"PP/cubarsi.png"
 },
 
 {
 name:"V.De Ben",
 country:"🇺🇾 Uruguay",
-img:"players/araujo.png"
+img:"PP/ven.png"
 },
 
 {
 name:"Gabriel",
 country:"🇮🇹 Italy",
-img:"players/bastoni.png"
+img:"PP/gabrial.png"
 }
 
 ],
@@ -141,31 +141,31 @@ CDM: [
 {
 name:"Casemiro",
 country:"🇪🇸 Spain",
-img:"players/rodri.png"
+img:"PP/casemiro.png"
 },
 
 {
 name:"N.Kante",
 country:"🏴 England",
-img:"players/rice.png"
+img:"PP/kante.png"
 },
 
 {
 name:"J.Kimmich",
 country:"🇫🇷 France",
-img:"players/tchouameni.png"
+img:"PP/kimich.png"
 },
 
 {
 name:"Rodri",
 country:"🇵🇹 Portugal",
-img:"players/palhinha.png"
+img:"PP/rodri.png"
 },
 
 {
 name:"A.Tchounmeni",
 country:"🇺🇾 Uruguay",
-img:"players/ugarte.png"
+img:"PP/tcho.png"
 }
 
 ],
@@ -175,31 +175,31 @@ CAM: [
 {
 name:"Szoboszlai",
 country:"🏴 England",
-img:"players/bellingham.png"
+img:"PP/szobo.png"
 },
 
 {
 name:"A.Guler",
 country:"🇩🇪 Germany",
-img:"players/musiala.png"
+img:"PP/guler.png"
 },
 
 {
 name:"Nico Paz",
 country:"🇩🇪 Germany",
-img:"players/wirtz.png"
+img:"PP/paz.png"
 },
 
 {
 name:"Neymar",
 country:"🇪🇸 Spain",
-img:"players/pedri.png"
+img:"PP/neymar.png"
 },
 
 {
 name:"R.Cherki",
 country:"🇳🇴 Norway",
-img:"players/odegaard.png"
+img:"PP/cherki.png"
 }
 
 ],
@@ -209,31 +209,31 @@ RW: [
 {
 name:"L.Messi",
 country:"🏴 England",
-img:"players/saka.png"
+img:"PP/saka.png"
 },
 
 {
 name:"M.Salah",
 country:"🇪🇸 Spain",
-img:"players/yamal.png"
+img:"PP/salah.png"
 },
 
 {
 name:"Olise",
 country:"🇫🇷 France",
-img:"players/dembele.png"
+img:"PP/olise.png"
 },
 
 {
 name:"B.Barcola",
 country:"🇦🇷 Argentina",
-img:"players/dimaria.png"
+img:"PP/barcola.png"
 },
 
 {
 name:"B.Saka",
 country:"🇸🇪 Sweden",
-img:"players/kulu.png"
+img:"PP/saka.png"
 }
 
 ],
@@ -243,31 +243,31 @@ LW: [
 {
 name:"Vinicius",
 country:"🇧🇷 Brazil",
-img:"players/vini.png"
+img:"PP/vini.png"
 },
 
 {
 name:"L.Diaz",
 country:"🇵🇹 Portugal",
-img:"players/leao.png"
+img:"PP/ldiaz.png"
 },
 
 {
 name:"Kvaratskhelia",
 country:"🇬🇪 Georgia",
-img:"players/kvara.png"
+img:"PP/kavaras.png"
 },
 
 {
 name:"D.Doue",
 country:"🇯🇵 Japan",
-img:"players/mitoma.png"
+img:"PP/doue.png"
 },
 
 {
 name:"Rashford",
 country:"🇨🇴 Colombia",
-img:"players/diaz.png"
+img:"PP/rasford.png"
 }
 
 ],
@@ -277,31 +277,31 @@ CF: [
 {
 name:"O.Dembélé",
 country:"🇫🇷 France",
-img:"players/mbappe.png"
+img:"PP/dembele.png"
 },
 
 {
 name:"L.Martínez",
 country:"🇳🇴 Norway",
-img:"players/haaland.png"
+img:"PP/Lmar.png"
 },
 
 {
 name:"V.Osimhen",
 country:"🏴 England",
-img:"players/kane.png"
+img:"PP/.png"
 },
 
 {
 name:"A.Isak",
 country:"🇦🇷 Argentina",
-img:"players/lautaro.png"
+img:"PP/.png"
 },
 
 {
 name:"J.Alvarez",
 country:"🇦🇷 Argentina",
-img:"players/alvarez.png"
+img:"PP/.png"
 }
 
 ],

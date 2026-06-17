@@ -63,6 +63,10 @@ background:#111;
 color:white;
 }
 
+h2{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
 /* MAIN LAYOUT */
 
 .main-layout{

@@ -22,6 +22,8 @@
 
 </header>
 
+
+
 <!-- TOP CONTROL BAR -->
 
 <section class="top-bar">
@@ -43,6 +45,14 @@
     </div>
 
 </section>
+
+<h2 id="welcome"></h2>
+<script>
+const username = localStorage.getItem("username");
+
+document.getElementById("welcome").innerText =
+"Welcome, " + username ;
+</script>
 
 <!-- MAIN AREA -->
 
@@ -96,7 +106,7 @@
 
         <div class="position-tabs">
 
-            <button class="pos-btn active" data-pos="ST">ST</button>
+            <button class="pos-btn active" data-pos="GK">GK</button>
 
             <button class="pos-btn" data-pos="CF">CF</button>
 
@@ -114,7 +124,7 @@
 
             <button class="pos-btn" data-pos="RB">RB</button>
 
-             <button class="pos-btn" data-pos="GK">GK</button>
+             <button class="pos-btn" data-pos="ST">ST</button>
 
         </div>
 
