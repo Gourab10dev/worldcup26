@@ -289,19 +289,19 @@ img:"PP/Lmar.png"
 {
 name:"V.Osimhen",
 country:"🏴 England",
-img:"PP/.png"
+img:"PP/osimhen.png"
 },
 
 {
 name:"A.Isak",
 country:"🇦🇷 Argentina",
-img:"PP/.png"
+img:"PP/isak.png"
 },
 
 {
 name:"J.Alvarez",
 country:"🇦🇷 Argentina",
-img:"PP/.png"
+img:"PP/jalv.png"
 }
 
 ],
