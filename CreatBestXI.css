@@ -479,8 +479,8 @@ header .id{
 /* Market */
 
 .market-panel{
-    width:95%;
-    max-width:250px;
+    width:80%;
+    max-width:200px;
     margin:10px auto;
     padding:15px 8px;
 }
