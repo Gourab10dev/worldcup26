@@ -451,7 +451,7 @@ header h1{
 /* Pitch */
 
 .pitch{
-    min-height:420px;
+    min-height:350px;
     padding:10px;
 }
 
@@ -475,11 +475,10 @@ header h1{
 /* Market */
 
 .market-panel{
-    width: 90%;
-    max-width: 320px;
-    margin:0 auto;
-    padding:15px 10px;
-    border-radius:20px;
+    width:92%;
+    max-width:330px;
+    margin:10px auto;
+    padding:15px 8px;
 }
 
 .market-panel h2{
@@ -490,33 +489,35 @@ header h1{
 /* Position buttons */
 
 .position-tabs{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:6px;
-    width: 100%;
-    margin-bottom: 12px;
+    display:grid;
+    grid-template-columns:repeat(3, 70px);
+    justify-content:center;
+    gap:5px;
+    width:fit-content;
+    margin:auto;
 }
 
 .pos-btn{
-    width: 50%;
-    padding: 10px 0;
-    font-size:14px;
-    border-radius: 12px;
-    margin-left:2px;
+    width:70px;
+    height:42px;
+    padding:0;
+    font-size:13px;
 }
 
 /* Player cards */
 
 #playerMarket{
     display:grid;
-    grid-template-columns:repeat(2,70px);
-    justify-content: center;
-    gap: 8px;
+    grid-template-columns:repeat(2, 95px);
+    justify-content:center;
+    gap:8px;
+    width:fit-content;
+    margin:15px auto 0;
 }
 
 .player-card{
-    width:70px;
-    height:100px;
+    width:95px;
+    height:130px;
 }
 
 .player-card img{
