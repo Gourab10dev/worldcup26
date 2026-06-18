@@ -507,7 +507,7 @@ header h1{
 
 #playerMarket{
     display:grid;
-    grid-template-columns:repeat(2, 80px);
+    grid-template-columns:repeat(2, 60px);
     justify-content:center;
     gap:8px;
     width:fit-content;
@@ -515,8 +515,8 @@ header h1{
 }
 
 .player-card{
-    width:80px;
-    height:110px;
+    width:60px;
+    height:80px;
 }
 
 .player-card img{
