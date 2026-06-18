@@ -466,8 +466,8 @@ header h1{
 /* Player slots */
 
 .player-slot{
-    width:42px;
-    height:58px;
+    width:52px;
+    height:70px;
     font-size:8px;
     border-radius:6px;
 }
@@ -475,37 +475,42 @@ header h1{
 /* Market */
 
 .market-panel{
-    padding:8px;
+    padding:12px;
     border-radius:10px;
 }
 
 .market-panel h2{
-    font-size:11px;
-    margin-bottom:8px;
+    font-size:1.3rem;
+    margin-bottom:10px;
 }
 
 /* Position buttons */
 
 .position-tabs{
-    gap:4px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5px;
+    margin-bottom: 15px;
 }
 
 .pos-btn{
-    padding:4px 6px;
-    font-size:8px;
+    width: 100%;
+    padding: 8px 0;
+    font-size:11px;
 }
 
 /* Player cards */
 
 #playerMarket{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:5px;
+    grid-template-columns:repeat(2,max-content);
+    justify-content: center;
+    gap: 8px;
 }
 
 .player-card{
-    width:55px;
-    height:75px;
+    width:65px;
+    height:90px;
 }
 
 .player-card img{
