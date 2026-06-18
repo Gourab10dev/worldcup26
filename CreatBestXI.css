@@ -415,6 +415,10 @@ header h1{
     font-size:1.4rem;
 }
 
+header .id{
+    margin: auto;
+}
+
 /* 3-column mobile layout */
 
 .main-layout{
