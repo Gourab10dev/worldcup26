@@ -493,13 +493,13 @@ header h1{
     display:grid;
     grid-template-columns:repeat(3, 70px);
     justify-content:center;
-    gap:5px;
+    gap:3px;
     width:fit-content;
     margin:auto;
 }
 
 .pos-btn{
-    width:65px;
+    width:50px;
     height:40px;
     padding:0;
     font-size:13px;
