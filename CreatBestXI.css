@@ -470,8 +470,8 @@ header .id{
 /* Player slots */
 
 .player-slot{
-    width:60px;
-    height:80px;
+    width:54px;
+    height:72px;
     font-size:8px;
     border-radius:6px;
 }
@@ -495,13 +495,13 @@ header .id{
 
 .position-tabs{
     display:grid;
-    grid-template-columns:repeat(3, 50px);
+    grid-template-columns:repeat(3, 45px);
     justify-content:center;
     gap:5px;
 }
 
 .pos-btn{
-    width:50px;
+    width:45px;
     height:30px;
     padding:0;
     font-size:11px;
