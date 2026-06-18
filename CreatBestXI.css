@@ -475,8 +475,11 @@ header h1{
 /* Market */
 
 .market-panel{
-    padding:12px;
-    border-radius:10px;
+    width: 90%;
+    max-width: 320px;
+    margin:0 auto;
+    padding:15px 10px;
+    border-radius:20px;
 }
 
 .market-panel h2{
@@ -503,14 +506,14 @@ header h1{
 
 #playerMarket{
     display:grid;
-    grid-template-columns:repeat(2,max-content);
+    grid-template-columns:repeat(2,70px);
     justify-content: center;
     gap: 8px;
 }
 
 .player-card{
-    width:65px;
-    height:90px;
+    width:70px;
+    height:100px;
 }
 
 .player-card img{
