@@ -483,7 +483,8 @@ header h1{
 
 .market-panel h2{
     font-size:1.3rem;
-    margin:auto 10px;
+    margin:auto;
+    margin-bottom: 15px;
 }
 
 /* Position buttons */
