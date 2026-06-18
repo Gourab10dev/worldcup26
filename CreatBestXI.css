@@ -482,7 +482,7 @@ header h1{
 }
 
 .market-panel h2{
-    font-size:1.3rem;
+    font-size:1rem;
     margin:auto;
     margin-bottom: 15px;
 }
@@ -493,7 +493,7 @@ header h1{
     display:grid;
     grid-template-columns:repeat(3, 50px);
     justify-content:center;
-    gap:4px;
+    gap:5px;
 }
 
 .pos-btn{

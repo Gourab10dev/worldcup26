@@ -18,7 +18,15 @@
 
 <header>
 
-    <h1>⚽ WORLD CUP MADNESS FANTASY ⚽</h1>
+    <h2 id="welcome"></h2>
+<script>
+const username = localStorage.getItem("username");
+
+document.getElementById("welcome").innerText =
+"Welcome, " + username ;
+</script>
+
+    <h1>⚽CREATE BEST XI⚽</h1>
 
 </header>
 
@@ -46,14 +54,6 @@
     </div>
 
 </section>
-
-<h2 id="welcome"></h2>
-<script>
-const username = localStorage.getItem("username");
-
-document.getElementById("welcome").innerText =
-"Welcome, " + username ;
-</script>
 
 <!-- MAIN AREA -->
 
