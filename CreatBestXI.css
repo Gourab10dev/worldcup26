@@ -467,6 +467,21 @@ header .id{
     gap:4px;
 }
 
+.formation-box{
+padding:15px 20px;
+border-radius:15px;
+}
+
+.formation-box label{
+display:block;
+margin-bottom:5px;
+}
+
+.formation-box select{
+padding:10px;
+border-radius:10px;
+}
+
 /* Player slots */
 
 .player-slot{
