@@ -491,7 +491,7 @@ header h1{
 
 .position-tabs{
     display: grid;
-    grid-template-columns: repeat(3,10fr);
+    grid-template-columns: repeat(3,1fr);
     gap:5px;
     margin-bottom: 15px;
 }
