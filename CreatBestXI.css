@@ -491,15 +491,18 @@ header h1{
 
 .position-tabs{
     display: grid;
-    grid-template-columns: repeat(3,80px);
-    gap:5px;
-    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap:6px;
+    width: 100%;
+    margin-bottom: 12px;
 }
 
 .pos-btn{
-    width: 50%;
-    padding: 8px 0;
-    font-size:13px;
+    width: 100%;
+    padding: 10px 0;
+    font-size:14px;
+    border-radius: 12px;
+    margin: 0
 }
 
 /* Player cards */
