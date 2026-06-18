@@ -483,6 +483,7 @@ header .id{
     max-width:150px;
     margin:10px auto;
     padding:15px 8px;
+    border-radius: 5px;
 }
 
 .market-panel h2{
@@ -498,13 +499,14 @@ header .id{
     grid-template-columns:repeat(3, 40px);
     justify-content:center;
     gap:5px;
+    border-radius: 5px;
 }
 
 .pos-btn{
     width:40px;
     height:25px;
     padding:0;
-    font-size:11px;
+    font-size:10px;
 }
 
 /* Player cards */
