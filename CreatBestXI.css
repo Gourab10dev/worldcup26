@@ -491,13 +491,13 @@ header h1{
 
 .position-tabs{
     display:grid;
-    grid-template-columns:repeat(3, 58px);
+    grid-template-columns:repeat(3, 50px);
     justify-content:center;
     gap:4px;
 }
 
 .pos-btn{
-    width:58px;
+    width:50px;
     height:30px;
     padding:0;
     font-size:11px;
