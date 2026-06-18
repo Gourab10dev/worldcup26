@@ -26,7 +26,7 @@ const formations = {
 442: [
 ["ST","ST"],
 ["LW","CDM","CDM","RW"],
-["LB","CB","CB","RB"]
+["LB","CB","CB","RB"],
 ["GK"]
 ],
 
