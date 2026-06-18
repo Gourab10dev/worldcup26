@@ -502,7 +502,7 @@ header h1{
     padding: 10px 0;
     font-size:14px;
     border-radius: 12px;
-    margin: 0
+    margin-left:2px;
 }
 
 /* Player cards */
