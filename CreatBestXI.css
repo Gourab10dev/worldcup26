@@ -507,7 +507,7 @@ header h1{
 
 #playerMarket{
     display:grid;
-    grid-template-columns:repeat(2, 95px);
+    grid-template-columns:repeat(2, 80px);
     justify-content:center;
     gap:8px;
     width:fit-content;
