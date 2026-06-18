@@ -475,8 +475,8 @@ header h1{
 /* Market */
 
 .market-panel{
-    width:90%;
-    max-width:300px;
+    width:95%;
+    max-width:250px;
     margin:10px auto;
     padding:15px 8px;
 }
