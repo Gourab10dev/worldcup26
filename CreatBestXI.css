@@ -40,11 +40,12 @@ text-shadow:
 display:flex;
 justify-content:center;
 margin-bottom:25px;
+margin-top:15px;
 }
 
 .formation-box{
 background:rgba(30, 41, 63, 0.55);
-padding:15px 25px;
+padding:10px 20px;
 border-radius:15px;
 border:1px solid rgba(255,255,255,.08);
 }
@@ -75,9 +76,9 @@ max-width:1700px;
 margin:auto;
 display:grid;
 grid-template-columns:
-220px
-1fr
-380px;
+800px
+2fr
+100px;
 gap:20px;
 align-items:start;
 
@@ -86,12 +87,13 @@ align-items:start;
 /* MANAGER */
 
 .manager-card{
-height: 90%;
-width: 80%;
+height: 170px;
+width: 140px;
 background:rgba(30, 41, 63, 0.55);
 border-radius:20px;
-padding:20px;
-margin-left: 18px;
+padding:16px;
+margin:auto;
+margin-bottom: 25px ;
 text-align:center;
 border:1.5px solid #00ccff;
 box-shadow:
@@ -99,8 +101,8 @@ box-shadow:
 }
 
 .manager-image{
-width:100px;
-height:100px;
+width:80px;
+height:80px;
 margin:auto;
 border-radius:50%;
 background:#111;
@@ -108,7 +110,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 font-size:3rem;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 /* PITCH */

@@ -29,6 +29,30 @@ document.getElementById("welcome").innerText =
     <h1>⚽CREATE BEST XI⚽</h1>
 
 </header>
+<div class="left-panel">
+
+        <!-- MANAGER -->
+
+        <div class="manager-card">
+
+            <div class="manager-image">
+
+                👔
+
+            </div>
+
+            <h3>Manager</h3>
+
+            <p id="dropmanegar">
+                <script>
+                const dropmanegar = localStorage.getItem("username");
+                document.getElementById("dropmanegar").innerText = username ;
+                </script>
+            </p>
+
+        </div>
+
+    </div>
 
 
 
@@ -60,28 +84,6 @@ document.getElementById("welcome").innerText =
 <div class="main-layout">
 
     <!-- LEFT SIDE -->
-
-    <div class="left-panel">
-
-        <!-- MANAGER -->
-
-        <div class="manager-card">
-
-            <div class="manager-image">
-
-                👔
-
-            </div>
-
-            <h3>Manager</h3>
-
-            <p>Drop Manager</p>
-
-        </div>
-
-    </div>
-
-    <!-- CENTER PITCH -->
 
     <div class="pitch-container">
 
