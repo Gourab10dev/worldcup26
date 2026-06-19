@@ -547,7 +547,8 @@ border-radius:10px;
 /* Market */
 
 .market-panel{
-    width: 130px;
+    width:70%;
+    max-width:150px;
     margin:10px auto;
     padding:15px 8px;
     border-radius: 2px;
