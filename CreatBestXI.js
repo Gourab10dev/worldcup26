@@ -333,6 +333,38 @@ selectedPlayer.addEventListener("click", () => {
 
 });
 })}
+
+let selectedCard = null;
+
+document.addEventListener("click", e => {
+
+    const card = e.target.closest(".player-card");
+
+    if(card){
+        selectedCard = card;
+    }
+
+});
+
+slot.addEventListener("click", () => {
+
+    if(!selectedCard) return;
+
+    const playerName =
+    selectedCard.querySelector("h3").innerText;
+
+    const imgSrc =
+    selectedCard.querySelector("img").src;
+
+    slot.innerHTML = `
+    <div class="selected-player"
+         data-name="${playerName}">
+        <img src="${imgSrc}">
+    </div>
+    `;
+
+});
+
 /* =====================
 CAPTAIN
 ===================== */
