@@ -486,7 +486,7 @@ header .id{
 
 .manager-card{
     width:70px;
-    height: 100px;
+    height: 90px;
     margin:auto;
     padding:8px;
     border-radius:10px;
@@ -547,8 +547,7 @@ border-radius:10px;
 /* Market */
 
 .market-panel{
-    width:80%;
-    max-width:150px;
+    width: 130px;
     margin:10px auto;
     padding:15px 8px;
     border-radius: 2px;
