@@ -507,7 +507,7 @@ header .id{
 /* Pitch */
 
 .pitch{
-    width: 90%;
+    width:90%;
     min-height:420px;
     grid-column: 1;
     margin: 0;
