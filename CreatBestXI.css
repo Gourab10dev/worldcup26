@@ -486,6 +486,7 @@ header .id{
 
 .manager-card{
     width:70px;
+    height: 100px;
     margin:auto;
     padding:8px;
     border-radius:10px;
