@@ -267,69 +267,103 @@ slot.addEventListener("drop", e => {
             <img src="${imgSrc}">
         </div>
     `;
+    const selectedPlayer =
+slot.querySelector(".selected-player");
 
-    slot.classList.add("filled");
+selectedPlayer.addEventListener("click", () => {
+
+    /* Captain */
+
+    if(captainMode){
+
+        if(currentCaptain){
+
+            currentCaptain
+            .querySelector(".captain-badge")
+            ?.remove();
+
+        }
+
+        const badge =
+        document.createElement("div");
+
+        badge.className =
+        "captain-badge";
+
+        badge.innerText = "C";
+
+        selectedPlayer.appendChild(badge);
+
+        currentCaptain =
+        selectedPlayer;
+
+        captainMode = false;
+
+        return;
+    }
+
+    /* Vice Captain */
+
+    if(viceCaptainMode){
+
+        if(currentViceCaptain){
+
+            currentViceCaptain
+            .querySelector(".vice-captain-badge")
+            ?.remove();
+
+        }
+
+        const badge =
+        document.createElement("div");
+
+        badge.className =
+        "vice-captain-badge";
+
+        badge.innerText = "VC";
+
+        selectedPlayer.appendChild(badge);
+
+        currentViceCaptain =
+        selectedPlayer;
+
+        viceCaptainMode = false;
+
+    }
 
 });
-}
-
+})}
 /* =====================
 CAPTAIN
 ===================== */
 
-let selectedCaptain =
-null;
+let captainMode = false;
+let currentCaptain = null;
 
-document
-.getElementById(
-"captainBtn"
-)
-.addEventListener(
-"click",
-()=>{
+document.getElementById("captainBtn")
+.addEventListener("click", () => {
 
-const name =
-prompt(
-"Type captain name exactly:"
-);
+    captainMode = true;
 
-selectedCaptain = name;
+    alert("Click a player on the pitch to make Captain");
 
-alert(
-name + " selected as Captain"
-);
-
-}
-);
+});
 
 /* =====================
 VICE CAPTAIN
 ===================== */
 
-let selectedVC =
-null;
+let viceCaptainMode = false;
+let currentViceCaptain = null;
 
-document
-.getElementById(
-"viceCaptainBtn"
-)
-.addEventListener(
-"click",
-()=>{
+document.getElementById("viceCaptainBtn")
+.addEventListener("click", () => {
 
-const name =
-prompt(
-"Type vice captain name:"
-);
+    viceCaptainMode = true;
 
-selectedVC = name;
+    alert("Click a player on the pitch to make Vice Captain");
 
-alert(
-name + " selected as Vice Captain"
-);
-
-}
-);
+});
 
 /* =====================
 SAVE TEAM
