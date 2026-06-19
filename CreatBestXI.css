@@ -507,10 +507,10 @@ header .id{
 /* Pitch */
 
 .pitch{
-    width: 75%;
+    width: 100%;
     min-height:420px;
-    padding: 10px;
-    margin: 0 auto;
+    grid-column: 1;
+    margin: 0;
 }
 
 #formationArea{
@@ -518,7 +518,7 @@ header .id{
 }
 
 .formation-row{
-    gap:3px;
+    gap:4px;
 }
 
 .formation-box{
@@ -539,8 +539,8 @@ border-radius:10px;
 /* Player slots */
 
 .player-slot{
-    width:48px;
-    height:65px;
+    width:54px;
+    height:72px;
     font-size:8px;
     border-radius:6px;
 }
