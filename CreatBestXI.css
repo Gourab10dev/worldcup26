@@ -475,10 +475,9 @@ header .id{
 
 .main-layout{
     display:grid;
-    grid-template-columns:1fr 130px;
-    gap:8px;
+    grid-template-columns:120px 1fr;
+    gap:10px;
     width:100%;
-    padding:0 5px;
     align-items:start;
 }
 
@@ -508,8 +507,9 @@ header .id{
 /* Pitch */
 
 .pitch{
-    min-height:350px;
-    padding:10px;
+    min-height:420px;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 #formationArea{
@@ -547,10 +547,11 @@ border-radius:10px;
 /* Market */
 
 .market-panel{
-    width:70%;
-    max-width:150px;
-    margin:10px auto;
-    padding:15px 8px;
+    grid-column: 1;
+    grid-row: 1;
+    width:120px;
+    margin:0;
+    padding:10px;
     border-radius: 2px;
 }
 
