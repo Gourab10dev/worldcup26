@@ -90,6 +90,10 @@ color:#ffd700;
 margin-bottom:20px;
 }
 
+.rule-card p{
+    margin-bottom: 10px;
+}
+
 .rule-card ul{
 text-align:left;
 line-height:2;
@@ -129,20 +133,55 @@ transition:.3s;
     cursor:pointer;
     margin-top:5px;
     margin-bottom:60px;
+    position:relative;
+    overflow:hidden;
+    
 
     box-shadow:
     0 0 10px #f5e94a,
     0 0 25px #f5e94a;
 
-    transition:0.3s;
 }
 
-.register-btn:hover{
-    transform:translateY(-3px) scale(1.05);
+/* Moving Shine */
+
+.register-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60px;
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.8),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    animation:
+    shineMove 2.5s infinite;
+
 }
 
-.register-btn:hover{
-    transform:translateY(-3px) scale(1.05);
+@keyframes shineMove{
+
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:130%;
+    }
+
 }
 
 /* FOOTER */
