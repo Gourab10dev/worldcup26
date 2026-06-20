@@ -435,6 +435,9 @@ localStorage.getItem("username"),
 formation:
 formationSelect.value,
 
+email:
+localStorage.getItem("email"),
+
 captain:
 currentCaptain?.dataset.name || "",
 
