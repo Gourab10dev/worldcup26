@@ -198,9 +198,17 @@ border:
 }
 
 .market-panel h2{
+    font-size: 1.8rem;
 text-align:center;
 margin-bottom:15px;
 color:#ffffff;
+}
+
+.market-panel h5{
+    font-size:0.8rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: whitesmoke;
 }
 
 /* POSITION TABS */
@@ -567,6 +575,11 @@ border-radius:10px;
     font-size:1rem;
     margin:auto;
     margin-bottom: 15px;
+}
+
+.market-panel h5{
+    font-size:0.7rem;
+    margin-top: 15px;
 }
 
 /* Position buttons */
