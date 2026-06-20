@@ -5,6 +5,8 @@ require("dotenv").config();
 
 const Team = require("./models/Team");
 const User = require("./models/User");
+const PlayerRating =
+require("./models/PlayerRating");
 
 const app = express();
 
@@ -75,6 +77,56 @@ success:false
 });
 
 const PORT = process.env.PORT || 3000;
+
+app.post("/update-rating", async(req,res)=>{
+
+try{
+
+const {name,rating} =
+req.body;
+
+await PlayerRating.findOneAndUpdate(
+
+{name:name},
+
+{
+name:name,
+rating:rating
+},
+
+{
+upsert:true,
+new:true
+}
+
+);
+
+res.json({
+
+success:true,
+
+message:
+"Player rating updated"
+
+});
+
+}
+catch(error){
+
+console.log(error);
+
+res.status(500).json({
+
+success:false,
+
+message:
+"Server Error"
+
+});
+
+}
+
+});
 
 app.listen(PORT, ()=>{
     console.log(`Server Running on ${PORT}`);
