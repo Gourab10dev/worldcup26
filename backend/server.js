@@ -195,12 +195,16 @@ let totalPoints = 0;
 
 for(const playerName of team.players){
 
+console.log("Checking:", playerName);
+
 const playerRating =
 await PlayerRating.findOne({
 
 name:playerName
 
 });
+
+console.log("Found:", playerRating);
 
 if(!playerRating)
 continue;

@@ -43,7 +43,7 @@ img:"chobi/timber.png"
 },
 
 {
-name:"J.Kunde",
+name:"J.Kounde",
 country:"🇪🇸 Spain",
 img:"chobi/kunde.png"
 },

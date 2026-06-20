@@ -133,9 +133,8 @@ alert(
 
 }
 else{
-
-alert(data.message || "Update Failed");
-
+    console.log(data);
+    alert(JSON.stringify(data));
 }
 
 }
