@@ -390,6 +390,43 @@ player.dataset.name
 
 });
 
+/*no repeatation*/
+
+const totalSlots =
+document.querySelectorAll(".player-slot").length;
+
+const filledSlots =
+document.querySelectorAll(".selected-player").length;
+
+if(filledSlots !== totalSlots){
+
+alert(
+`Complete your Best XI first!\n\n${filledSlots}/${totalSlots} selected`
+);
+
+return;
+}
+
+if(!currentCaptain){
+
+alert(
+"Please select a Captain!"
+);
+
+return;
+}
+
+if(!currentViceCaptain){
+
+alert(
+"Please select a Vice Captain!"
+);
+
+return;
+}
+
+/*team data collection*/
+
 const teamData = {
 
 username:
@@ -432,7 +469,7 @@ if(data.success){
 
 alert("Team Saved Successfully!");
 
-window.location.herf="Leaderboard.html";
+window.location.href="Leaderboard.html";
 
 }
 else{
