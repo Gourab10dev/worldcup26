@@ -1,9 +1,3 @@
-/*save user name*/
-
-localStorage.setItem(
-"username",
-document.getElementById("username").value
-);
 
 
 
@@ -381,37 +375,8 @@ SAVE TEAM
 ===================== */
 
 document
-.getElementById(
-"saveTeamBtn"
-)
-.addEventListener(
-"click",
-()=>{
-
-const selectedPlayers = [];
-
-document
-.querySelectorAll(
-".player-slot"
-)
-.forEach(slot=>{
-
-const player =
-slot.querySelector("h3");
-
-if(player){
-
-selectedPlayers.push(
-player.innerText
-);
-
-}
-
-});
-/*
-document
 .getElementById("saveTeamBtn")
-.addEventListener("click", async()=>{
+.addEventListener("click", async ()=>{
 
 const selectedPlayers = [];
 
@@ -424,7 +389,7 @@ player.dataset.name
 );
 
 });
-*/
+
 const teamData = {
 
 username:
@@ -434,10 +399,10 @@ formation:
 formationSelect.value,
 
 captain:
-selectedCaptain,
+currentCaptain?.dataset.name || "",
 
 viceCaptain:
-selectedVC,
+currentViceCaptain?.dataset.name || "",
 
 players:
 selectedPlayers
@@ -446,20 +411,16 @@ selectedPlayers
 
 try{
 
-const response =
-await fetch(
-"https://YOUR-RENDER-BACKEND.onrender.com/save-team",
+const response = await fetch(
+"https://worldcup26-backend.onrender.com/save-team",
 {
 method:"POST",
 
 headers:{
-"Content-Type":
-"application/json"
+"Content-Type":"application/json"
 },
 
-body:JSON.stringify(
-teamData
-)
+body:JSON.stringify(teamData)
 
 }
 );
@@ -474,9 +435,18 @@ alert(
 );
 
 }
+else{
+
+alert(
+"Failed to Save Team"
+);
+
+}
 
 }
 catch(error){
+
+console.error(error);
 
 alert(
 "Error Saving Team"
@@ -485,6 +455,3 @@ alert(
 }
 
 });
-/*
-});
-*/
