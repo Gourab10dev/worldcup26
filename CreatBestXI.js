@@ -451,6 +451,8 @@ selectedPlayers
 
 try{
 
+console.log(teamData);
+
 const response = await fetch(
 "https://worldcup26-backend.onrender.com/save-team",
 {
