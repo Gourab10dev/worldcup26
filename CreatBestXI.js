@@ -408,7 +408,7 @@ player.innerText
 }
 
 });
-
+/*
 document
 .getElementById("saveTeamBtn")
 .addEventListener("click", async()=>{
@@ -424,7 +424,7 @@ player.dataset.name
 );
 
 });
-
+*/
 const teamData = {
 
 username:
@@ -485,5 +485,6 @@ alert(
 }
 
 });
-
+/*
 });
+*/
