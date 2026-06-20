@@ -1,23 +1,50 @@
+/* =====================
+UPDATE PLAYER RATING
+===================== */
+
 document
 .getElementById("updateBtn")
 .addEventListener(
 "click",
-async()=>{
+async ()=>{
 
-const name =
+const playerName =
 document.getElementById(
 "playerName"
-).value;
+).value.trim();
 
-const rating =
+const playerRating =
 Number(
 document.getElementById(
 "playerRating"
 ).value
 );
 
+if(!playerName){
+
+alert(
+"Enter Player Name"
+);
+
+return;
+
+}
+
+if(!playerRating){
+
+alert(
+"Enter Player Rating"
+);
+
+return;
+
+}
+
+try{
+
+const response =
 await fetch(
-"https://YOUR-BACKEND.onrender.com/update-rating",
+"https://worldcup26-backend.onrender.com/update-rating",
 {
 method:"POST",
 
@@ -27,15 +54,54 @@ headers:{
 },
 
 body:JSON.stringify({
-name,
-rating
+
+name:playerName,
+
+rating:playerRating
+
 })
 
 }
 );
 
+const data =
+await response.json();
+
+if(data.success){
+
 alert(
-"Rating Updated"
+playerName +
+" Rating Updated Successfully!"
 );
+
+document
+.getElementById(
+"playerName"
+).value = "";
+
+document
+.getElementById(
+"playerRating"
+).value = "";
+
+}
+else{
+
+alert(
+data.message
+);
+
+}
+
+}
+catch(error){
+
+console.error(error);
+
+alert(
+"Server Error"
+);
+
+}
 
 });
