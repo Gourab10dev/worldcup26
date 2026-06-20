@@ -432,11 +432,11 @@ const teamData = {
 username:
 localStorage.getItem("username"),
 
-formation:
-formationSelect.value,
-
 email:
 localStorage.getItem("email"),
+
+formation:
+formationSelect.value,
 
 captain:
 currentCaptain?.dataset.name || "",
