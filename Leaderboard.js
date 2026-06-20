@@ -25,6 +25,10 @@ tbody.innerHTML += `
 
 <td>${team.username}</td>
 
+<td>${team.formation}</td>
+
+<td>${team.captain}</td>
+
 <td>${team.points}</td>
 
 </tr>
