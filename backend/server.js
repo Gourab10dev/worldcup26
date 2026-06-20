@@ -13,6 +13,31 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+/*rating-points function*/
+
+function ratingToPoints(rating){
+
+if(rating >= 9)
+return 12;
+
+if(rating >= 8)
+return 10;
+
+if(rating >= 7)
+return 8;
+
+if(rating >= 6.5)
+return 5;
+
+if(rating >= 6)
+return 3;
+
+return 1;
+
+}
+
+/*route*/
+
 app.get("/", (req,res)=>{
     res.send("Fantasy League Backend Running");
 });
@@ -54,13 +79,35 @@ app.post("/save-team", async(req,res)=>{
 
 try{
 
-const team = new Team(req.body);
+const existingTeam =
+await Team.findOne({
+email:req.body.email
+});
+
+if(existingTeam){
+
+return res.status(400).json({
+
+success:false,
+
+message:
+"You have already created a team."
+
+});
+
+}
+
+const team =
+new Team(req.body);
 
 await team.save();
 
 res.json({
+
 success:true,
+
 message:"Team Saved"
+
 });
 
 }
@@ -69,7 +116,9 @@ catch(error){
 console.log(error);
 
 res.status(500).json({
+
 success:false
+
 });
 
 }
@@ -128,9 +177,92 @@ message:
 
 });
 
-app.listen(PORT, ()=>{
-    console.log(`Server Running on ${PORT}`);
+/*calculate leader board route*/
+
+app.post("/calculate-points", async(req,res)=>{
+
+try{
+
+const teams =
+await Team.find();
+
+for(const team of teams){
+
+let totalPoints = 0;
+
+for(const playerName of team.players){
+
+const playerRating =
+await PlayerRating.findOne({
+
+name:playerName
+
 });
+
+if(!playerRating)
+continue;
+
+let playerPoints =
+ratingToPoints(
+playerRating.rating
+);
+
+if(
+playerName === team.captain
+){
+
+playerPoints =
+playerPoints * 2;
+
+}
+
+if(
+playerName === team.viceCaptain
+){
+
+playerPoints =
+playerPoints * 1.5;
+
+}
+
+totalPoints += playerPoints;
+
+}
+
+team.points =
+Math.round(totalPoints);
+
+await team.save();
+
+}
+
+res.json({
+
+success:true,
+
+message:
+"Leaderboard Updated"
+
+});
+
+}
+catch(error){
+
+console.log(error);
+
+res.status(500).json({
+
+success:false
+
+});
+
+}
+
+});
+
+/*----------*/
+
+
 
 app.get("/leaderboard", async(req,res)=>{
 
@@ -151,4 +283,7 @@ success:false
 
 }
 
+});
+app.listen(PORT, ()=>{
+    console.log(`Server Running on ${PORT}`);
 });

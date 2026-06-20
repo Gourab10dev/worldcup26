@@ -105,3 +105,50 @@ alert(
 }
 
 });
+
+document
+.getElementById("calculateBtn")
+.addEventListener(
+"click",
+async()=>{
+
+try{
+
+const response =
+await fetch(
+"https://worldcup26-backend.onrender.com/calculate-points",
+{
+method:"POST"
+}
+);
+
+const data =
+await response.json();
+
+if(data.success){
+
+alert(
+"Leaderboard Updated Successfully!"
+);
+
+}
+else{
+
+alert(
+"Update Failed"
+);
+
+}
+
+}
+catch(error){
+
+console.log(error);
+
+alert(
+"Server Error"
+);
+
+}
+
+});
