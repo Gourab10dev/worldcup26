@@ -134,9 +134,7 @@ alert(
 }
 else{
 
-alert(
-"Update Failed"
-);
+alert(data.message || "Update Failed");
 
 }
 
