@@ -1,3 +1,12 @@
+/*save user name*/
+
+localStorage.setItem(
+"username",
+document.getElementById("username").value
+);
+
+
+
 const formationArea =
 document.getElementById("formationArea");
 
@@ -334,36 +343,6 @@ selectedPlayer.addEventListener("click", () => {
 });
 })}
 
-let selectedCard = null;
-
-document.addEventListener("click", e => {
-
-    const card = e.target.closest(".player-card");
-
-    if(card){
-        selectedCard = card;
-    }
-
-});
-
-slot.addEventListener("click", () => {
-
-    if(!selectedCard) return;
-
-    const playerName =
-    selectedCard.querySelector("h3").innerText;
-
-    const imgSrc =
-    selectedCard.querySelector("img").src;
-
-    slot.innerHTML = `
-    <div class="selected-player"
-         data-name="${playerName}">
-        <img src="${imgSrc}">
-    </div>
-    `;
-
-});
 
 /* =====================
 CAPTAIN
@@ -430,12 +409,81 @@ player.innerText
 
 });
 
-console.log(
-selectedPlayers
+document
+.getElementById("saveTeamBtn")
+.addEventListener("click", async()=>{
+
+const selectedPlayers = [];
+
+document
+.querySelectorAll(".selected-player")
+.forEach(player=>{
+
+selectedPlayers.push(
+player.dataset.name
 );
 
-alert(
-"Team Saved!"
+});
+
+const teamData = {
+
+username:
+localStorage.getItem("username"),
+
+formation:
+formationSelect.value,
+
+captain:
+selectedCaptain,
+
+viceCaptain:
+selectedVC,
+
+players:
+selectedPlayers
+
+};
+
+try{
+
+const response =
+await fetch(
+"https://YOUR-RENDER-BACKEND.onrender.com/save-team",
+{
+method:"POST",
+
+headers:{
+"Content-Type":
+"application/json"
+},
+
+body:JSON.stringify(
+teamData
+)
+
+}
 );
+
+const data =
+await response.json();
+
+if(data.success){
+
+alert(
+"Team Saved Successfully!"
+);
+
+}
+
+}
+catch(error){
+
+alert(
+"Error Saving Team"
+);
+
+}
+
+});
 
 });

@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
+const Team = require("./models/Team");
 const User = require("./models/User");
 
 const app = express();
@@ -49,4 +50,35 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{
     console.log(`Server Running on ${PORT}`);
+});
+
+
+/*save team backend*/
+
+app.post("/save-team", async(req,res)=>{
+
+try{
+
+const team =
+new Team(req.body);
+
+await team.save();
+
+res.json({
+success:true,
+message:"Team Saved"
+});
+
+}
+
+catch(error){
+
+console.log(error);
+
+res.status(500).json({
+success:false
+});
+
+}
+
 });
