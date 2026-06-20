@@ -46,21 +46,13 @@ app.post("/register", async(req,res)=>{
 
 });
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, ()=>{
-    console.log(`Server Running on ${PORT}`);
-});
-
-
 /*save team backend*/
 
 app.post("/save-team", async(req,res)=>{
 
 try{
 
-const team =
-new Team(req.body);
+const team = new Team(req.body);
 
 await team.save();
 
@@ -70,7 +62,6 @@ message:"Team Saved"
 });
 
 }
-
 catch(error){
 
 console.log(error);
@@ -81,4 +72,10 @@ success:false
 
 }
 
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, ()=>{
+    console.log(`Server Running on ${PORT}`);
 });
