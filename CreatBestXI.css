@@ -5,20 +5,19 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Oxanium',sans-serif;
-background:
-linear-gradient(
-    rgba(0,0,0,.85),
-    rgba(0,0,0,.85)
-),
-url("articles-fifa-world-cup-trionda-ball.jpg");
-
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:white;
-min-height:100vh;
+    background:#0a0a0a;
+    color:rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    text-align:center;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url("articles-fifa-world-cup-trionda-ball.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
+
 
 /* HEADER */
 
@@ -27,7 +26,12 @@ text-align:center;
 padding:25px 15px;
 }
 
+header h3{
+    font-family:'Oxanium', sans-serif;
+}
+
 header h1{
+    font-family:'Oxanium', sans-serif;
 color:#b3ff00;
 font-size:2.5rem;
 text-shadow:
@@ -117,6 +121,14 @@ justify-content:center;
 align-items:center;
 font-size:3rem;
 margin-bottom:10px;
+}
+
+.manager-card h3{
+    font-family:'Oxanium', sans-serif;
+}
+
+.manager-card p{
+    font-family:'Oxanium', sans-serif;
 }
 
 /* PITCH */
@@ -400,18 +412,21 @@ transform:translateY(-3px);
     0 0 10px #00ccff;
 
 }
+
 /* FOOTER */
-
 footer{
-margin-top:30px;
-text-align:center;
-padding:15px;
-background:rgba(0,0,0,.75);
-border-top:
-1px solid rgba(255,215,0,.2);
+    width:100%;
+    background:rgba(0,0,0,0.8);
 
+    border-top:1px solid rgba(255,215,0,0.3);
+    box-shadow:
+    0 -5px 20px rgba(255,215,0,0.1);
+
+    padding:10px ;
+    margin-top:20px;
+    text-align:center;
+    font-size:14px;
 }
-
 /* TABLET */
 
 @media(max-width:1200px){

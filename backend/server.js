@@ -79,3 +79,24 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{
     console.log(`Server Running on ${PORT}`);
 });
+
+app.get("/leaderboard", async(req,res)=>{
+
+try{
+
+const teams =
+await Team.find()
+.sort({points:-1});
+
+res.json(teams);
+
+}
+catch(error){
+
+res.status(500).json({
+success:false
+});
+
+}
+
+});

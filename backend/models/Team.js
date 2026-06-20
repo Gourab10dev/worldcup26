@@ -10,7 +10,12 @@ captain:String,
 
 viceCaptain:String,
 
-players:[String]
+players:[String],
+
+points:{
+type:Number,
+default:0
+}
 
 },
 {

@@ -430,9 +430,9 @@ await response.json();
 
 if(data.success){
 
-alert(
-"Team Saved Successfully!"
-);
+alert("Team Saved Successfully!");
+
+window.location.herf="Leaderboard.html";
 
 }
 else{
