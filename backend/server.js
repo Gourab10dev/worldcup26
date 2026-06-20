@@ -183,8 +183,11 @@ app.post("/calculate-points", async(req,res)=>{
 
 try{
 
-const teams =
-await Team.find();
+console.log("Calculate Points Route Hit");
+
+const teams = await Team.find();
+
+console.log("Teams Found:", teams.length);
 
 for(const team of teams){
 
