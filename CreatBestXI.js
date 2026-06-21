@@ -57,6 +57,7 @@ const formations = {
 
 3421: [
 ["ST"],
+["LM","RM"],
 ["LAM","CDM","CDM","RAM"],
 ["CB","CB","CB"],
 ["GK"]
