@@ -97,9 +97,9 @@ img:"chobi/carva.png"
 },
 
 {
-name:"R.James",
-country:"England",
-img:"chobi/rjames.png"
+name:"N.Molina",
+country:"Argentina",
+img:"chobi/molina.png"
 }
 
 ],
@@ -263,15 +263,15 @@ img:"chobi/caicedo.png"
 CAM: [
 
 {
-name:"Szoboszlai",
-country:"England",
-img:"chobi/szobo.png"
+name:"Cunha",
+country:"Brazil",
+img:"chobi/cunha.png"
 },
 
 {
-name:"A.Guler",
-country:"Turkey",
-img:"chobi/guler.png"
+name:"Paqueta",
+country:"Brazil",
+img:"chobi/paqu.png"
 },
 
 {
@@ -307,7 +307,59 @@ img:"chobi/doue.png"
 {
 name:"J.Musiala",
 country:"Germany",
-img:"chobi/musiala.png"
+img:"chobi/musi.png"
+}
+
+],
+
+CM: [
+
+{
+name:"L.Modric",
+country:"Croatia",
+img:"chobi/luka.png"
+},
+
+{
+name:"Pedri",
+country:"Spain",
+img:"chobi/pedri.png"
+},
+
+{
+name:"Vitinha",
+country:"Portugal",
+img:"chobi/vitinah.png"
+},
+
+{
+name:"Valvarde",
+country:"Uruguye",
+img:"chobi/valva.png"
+},
+
+{
+name:"Mac Allister",
+country:"Argentina",
+img:"chobi/maac.png"
+},
+
+{
+name:"B.Fernandes",
+country:"Portugal",
+img:"chobi/burno.png"
+},
+
+{
+name:"J.Bellingham",
+country:"England",
+img:"chobi/beli.png"
+},
+
+{
+name:"Enzo",
+country:"Argentina",
+img:"chobi/enzo.png"
 }
 
 ],
@@ -381,7 +433,7 @@ img:"chobi/Ldiaz.png"
 {
 name:"R.Leao",
 country:"Portugal",
-img:"chobi/.png"
+img:"chobi/leao.png"
 },
 
 {
