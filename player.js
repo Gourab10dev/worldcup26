@@ -15,8 +15,8 @@ img:"chobi/raya.png"
 },
 
 {
-name:"E.Garcia",
-country:"🇫🇷 France",
+name:"D.Costa",
+country:"Portugal",
 img:"chobi/egarcia.png"
 },
 
@@ -30,6 +30,24 @@ img:"chobi/maignan.png"
 name:"T.Courtois",
 country:"🇩🇪 Germany",
 img:"chobi/courto.png"
+},
+
+{
+name:"M.Neuer",
+country:"Germany",
+img:"chobi/nuer.png"
+},
+
+{
+name:"A.Becker",
+country:"Brazil",
+img:"chobi/alison.png"
+},
+
+{
+name:"U.Simon",
+country:"Spain",
+img:"chobi/simon.png"
 }
 
 ],
@@ -44,13 +62,13 @@ img:"chobi/timber.png"
 
 {
 name:"J.Kounde",
-country:"🇪🇸 Spain",
+country:"France",
 img:"chobi/kunde.png"
 },
 
 {
 name:"J.Cancelo",
-country:"🏴 England",
+country:"Portugal",
 img:"chobi/cancelo.png"
 },
 
@@ -64,6 +82,24 @@ img:"chobi/james.png"
 name:"BEN White",
 country:"🇳🇱 Netherlands",
 img:"chobi/ben.png"
+},
+
+{
+name:"A.Hakimi",
+country:"Morocco",
+img:"chobi/haki.png"
+},
+
+{
+name:"D.Carvajal",
+country:"Spain",
+img:"chobi/carva.png"
+},
+
+{
+name:"R.James",
+country:"England",
+img:"chobi/rjames.png"
 }
 
 ],
@@ -98,6 +134,24 @@ img:"chobi/sandro.png"
 name:"N.Mazaraoui",
 country:"🇪🇸 Spain",
 img:"chobi/mazra.png"
+},
+
+{
+name:"M.Cucurella",
+country:"Spain",
+img:"chobi/cucur.png"
+},
+
+{
+name:"D.Santos",
+country:"Brazil",
+img:"chobi/santos.png"
+},
+
+{
+name:"A.Davies",
+country:"Canada",
+img:"chobi/adavies.png"
 }
 
 ],
@@ -106,32 +160,50 @@ CB: [
 
 {
 name:"D.Huijsen",
-country:"🇳🇱 Netherlands",
+country:"Spain",
 img:"chobi/huijsen.png"
 },
 
 {
 name:"W.Saliba",
-country:"🇫🇷 France",
+country:"France",
 img:"chobi/saliba.png"
 },
 
 {
 name:"P.Cubarsi",
-country:"🇵🇹 Portugal",
+country:"Spain",
 img:"chobi/cubarsi.png"
 },
 
 {
-name:"V.De Ben",
-country:"🇺🇾 Uruguay",
-img:"chobi/ven.png"
+name:"C.Romero",
+country:"Argentina",
+img:"chobi/romero.png"
 },
 
 {
 name:"Gabriel",
-country:"🇮🇹 Italy",
+country:"Italy",
 img:"chobi/gabrial.png"
+},
+
+{
+name:"R.Dias",
+country:"Portugal",
+img:"chobi/dias.png"
+},
+
+{
+name:"Van Dijk",
+country:"Netherlands",
+img:"chobi/vandijk.png"
+},
+
+{
+name:"Rudiger",
+country:"Germany",
+img:"chobi/rudi.png"
 }
 
 ],
@@ -140,32 +212,50 @@ CDM: [
 
 {
 name:"Casemiro",
-country:"🇪🇸 Spain",
+country:"Brazil",
 img:"chobi/casemiro.png"
 },
 
 {
 name:"N.Kante",
-country:"🏴 England",
+country:"France",
 img:"chobi/kante.png"
 },
 
 {
 name:"J.Kimmich",
-country:"🇫🇷 France",
+country:"Germany",
 img:"chobi/kimich.png"
 },
 
 {
 name:"Rodri",
-country:"🇵🇹 Portugal",
+country:"Portugal",
 img:"chobi/rodri.png"
 },
 
 {
 name:"A.Tchounmeni",
-country:"🇺🇾 Uruguay",
+country:"France",
 img:"chobi/tcho.png"
+},
+
+{
+name:"D.Rice",
+country:"England",
+img:"chobi/drice.png"
+},
+
+{
+name:"J.Neves",
+country:"Portugal",
+img:"chobi/neves.png"
+},
+
+{
+name:"M.Caicedo",
+country:"Ecuador",
+img:"chobi/caicedo.png"
 }
 
 ],
@@ -174,32 +264,50 @@ CAM: [
 
 {
 name:"Szoboszlai",
-country:"🏴 England",
+country:"England",
 img:"chobi/szobo.png"
 },
 
 {
 name:"A.Guler",
-country:"🇩🇪 Germany",
+country:"Turkey",
 img:"chobi/guler.png"
 },
 
 {
 name:"Nico Paz",
-country:"🇩🇪 Germany",
+country:"Germany",
 img:"chobi/paz.png"
 },
 
 {
 name:"Neymar",
-country:"🇪🇸 Spain",
+country:"Brazil",
 img:"chobi/neymar.png"
 },
 
 {
 name:"R.Cherki",
-country:"🇳🇴 Norway",
+country:"Norway",
 img:"chobi/cherki.png"
+},
+
+{
+name:"k.de Bruyne",
+country:"Belgium",
+img:"chobi/debru.png"
+},
+
+{
+name:"D.Doue",
+country:"France",
+img:"chobi/doue.png"
+},
+
+{
+name:"J.Musiala",
+country:"Germany",
+img:"chobi/musiala.png"
 }
 
 ],
@@ -208,8 +316,8 @@ RW: [
 
 {
 name:"L.Messi",
-country:"🏴 England",
-img:"chobi/saka.png"
+country:"Argentina",
+img:"chobi/.png"
 },
 
 {
@@ -226,14 +334,32 @@ img:"chobi/olise.png"
 
 {
 name:"B.Barcola",
-country:"🇦🇷 Argentina",
+country:"France",
 img:"chobi/barcola.png"
 },
 
 {
 name:"B.Saka",
-country:"🇸🇪 Sweden",
+country:"Sweden",
 img:"chobi/saka.png"
+},
+
+{
+name:"L.yamal",
+country:"Spain",
+img:"chobi/yamal.png"
+},
+
+{
+name:"Raphinha",
+country:"Brazil",
+img:"chobi/rapha.png"
+},
+
+{
+name:"O.dembele",
+country:"France",
+img:"chobi/dembele.png"
 }
 
 ],
@@ -242,32 +368,50 @@ LW: [
 
 {
 name:"Vinicius",
-country:"🇧🇷 Brazil",
+country:"Brazil",
 img:"chobi/vini.png"
 },
 
 {
 name:"L.Diaz",
 country:"🇵🇹 Portugal",
-img:"chobi/ldiaz.png"
+img:"chobi/Ldiaz.png"
 },
 
 {
-name:"Kvaratskhelia",
-country:"🇬🇪 Georgia",
-img:"chobi/kavaras.png"
+name:"R.Leao",
+country:"Portugal",
+img:"chobi/.png"
 },
 
 {
 name:"D.Doue",
-country:"🇯🇵 Japan",
+country:"Japan",
 img:"chobi/doue.png"
 },
 
 {
 name:"Rashford",
-country:"🇨🇴 Colombia",
+country:"Colombia",
 img:"chobi/rasford.png"
+},
+
+{
+name:"C.Gakpo",
+country:"Netherlands",
+img:"chobi/gakpo.png"
+},
+
+{
+name:"C.Pulisic",
+country:"USA",
+img:"chobi/pulisic.png"
+},
+
+{
+name:"B.Barcola",
+country:"France",
+img:"chobi/barcola.png"
 }
 
 ],
@@ -275,33 +419,51 @@ img:"chobi/rasford.png"
 CF: [
 
 {
-name:"O.Dembélé",
-country:"🇫🇷 France",
-img:"chobi/dembele.png"
+name:"V.Gyokeres",
+country:"Sweden",
+img:"chobi/gyok.png"
 },
 
 {
-name:"L.Martínez",
-country:"🇳🇴 Norway",
-img:"chobi/Lmar.png"
+name:"R.Lukaku",
+country:"Belgium",
+img:"chobi/lukaku.png"
 },
 
 {
-name:"V.Osimhen",
-country:"🏴 England",
-img:"chobi/osimhen.png"
+name:"D.Undav",
+country:"Germany",
+img:"chobi/dav.png"
 },
 
 {
 name:"A.Isak",
-country:"🇦🇷 Argentina",
+country:"Argentina",
 img:"chobi/isak.png"
 },
 
 {
 name:"J.Alvarez",
-country:"🇦🇷 Argentina",
-img:"chobi/jalv.png"
+country:"Argentina",
+img:"chobi/alvarez.png"
+},
+
+{
+name:"Kai Havertz",
+country:"Germany",
+img:"chobi/havertz.png"
+},
+
+{
+name:"F.Balogun",
+country:"USA",
+img:"chobi/balogun.png"
+},
+
+{
+name:"A.Ueda",
+country:"Japan",
+img:"chobi/ueda.png"
 }
 
 ],
@@ -334,8 +496,26 @@ img:"chobi/endrik.png"
 
 {
 name:"E.Haaland",
-country:"🏴 England",
+country:"England",
 img:"chobi/haland.png"
+},
+
+{
+name:"L.Martinez",
+country:"Argentina",
+img:"chobi/Lmar.png"
+},
+
+{
+name:"J.Alvarez",
+country:"Argentina",
+img:"chobi/alvarez.png"
+},
+
+{
+name:"J.David",
+country:"USA",
+img:"chobi/jdavid.png"
 }
 
 ]
