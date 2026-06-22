@@ -10,8 +10,7 @@ document
       country: document.getElementById("country").value.trim(),
       whatsapp: document.getElementById("whatsapp").value.trim(),
       wcWinner: document.getElementById("wcWinner").value.trim(),
-      goldenBoot: document.getElementById("goldenBoot").value.trim(),
-      goldenBall: document.getElementById("goldenBall").value.trim()
+      goldenBoot: document.getElementById("goldenBoot").value.trim()
     };
 
     try {

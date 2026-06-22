@@ -31,9 +31,6 @@ const userSchema = new mongoose.Schema({
     },
     goldenBoot:{
         type:String
-    },
-    goldenBall:{
-        type:String
     }
 
 },{
