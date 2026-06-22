@@ -8,7 +8,10 @@ document
       dob: document.getElementById("dob").value,
       email: document.getElementById("email").value.trim(),
       country: document.getElementById("country").value.trim(),
-      whatsapp: document.getElementById("whatsapp").value.trim()
+      whatsapp: document.getElementById("whatsapp").value.trim(),
+      wcwinner: document.getElementById("wcwinner").value.trim(),
+      gbootwinner: document.getElementById("gbootwinner").value.trim(),
+      gballwinner: document.getElementById("gballwinner").value.trim()
     };
 
     try {
