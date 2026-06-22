@@ -25,6 +25,15 @@ const userSchema = new mongoose.Schema({
     whatsapp:{
         type:String,
         required:true
+    },
+    wcWinner:{
+        type:String
+    },
+    goldenBoot:{
+        type:String
+    },
+    goldenBall:{
+        type:String
     }
 
 },{

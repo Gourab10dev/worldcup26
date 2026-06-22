@@ -9,9 +9,9 @@ document
       email: document.getElementById("email").value.trim(),
       country: document.getElementById("country").value.trim(),
       whatsapp: document.getElementById("whatsapp").value.trim(),
-      wcwinner: document.getElementById("wcwinner").value.trim(),
-      gbootwinner: document.getElementById("gbootwinner").value.trim(),
-      gballwinner: document.getElementById("gballwinner").value.trim()
+      wcWinner: document.getElementById("wcWinner").value.trim(),
+      goldenBoot: document.getElementById("goldenBoot").value.trim(),
+      goldenBall: document.getElementById("goldenBall").value.trim()
     };
 
     try {
