@@ -558,3 +558,26 @@ alert(
 }
 
 });
+
+/*-----popup----*/
+
+const overlay =
+document.getElementById(
+"instructionOverlay"
+);
+
+overlay.addEventListener(
+"click",
+(e)=>{
+
+if(
+e.target === overlay
+){
+
+overlay.style.display =
+"none";
+
+}
+
+}
+);
