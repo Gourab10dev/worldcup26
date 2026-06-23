@@ -11,7 +11,10 @@ const tabs =
 document.querySelectorAll(".pos-btn");
 
 const isMobile =
-window.innerWidth <= 768-480;
+window.innerWidth <= 768;
+
+const isMobile =
+window.innerWidth <= 480;
 
 let selectedMarketPlayer = null;
 /* =====================
@@ -146,7 +149,7 @@ card.classList.add(
 "player-card"
 );
 
-card.draggable = true;
+card.draggable = !isMobile;
 
 card.innerHTML = `
 
@@ -164,6 +167,16 @@ card.addEventListener("click", ()=>{
 
 if(!isMobile)
 return;
+
+document
+.querySelectorAll(".player-card")
+.forEach(c =>
+c.classList.remove("selected-card")
+);
+
+card.classList.add(
+"selected-card"
+);
 
 selectedMarketPlayer = player;
 
@@ -243,7 +256,28 @@ slot.addEventListener("click", ()=>{
 if(!selectedMarketPlayer)
 return;
 
-/* mobile selection code here */
+const playerName =
+selectedMarketPlayer.name;
+
+const exists =
+[...document.querySelectorAll(".selected-player")]
+.some(player =>
+player.dataset.name === playerName);
+
+if(exists){
+
+alert("Player already selected!");
+
+return;
+
+}
+
+slot.innerHTML = `
+<div class="selected-player"
+data-name="${playerName}">
+<img src="${selectedMarketPlayer.img}">
+</div>
+`;
 
 });
 

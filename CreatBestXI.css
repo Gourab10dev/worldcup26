@@ -661,4 +661,15 @@ footer{
     margin-top:15px;
 }
 
+.selected-card{
+
+border:2px solid gold;
+
+box-shadow:
+0 0 15px gold;
+
+transform:scale(1.05);
+
+}
+
 }
