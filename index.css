@@ -69,8 +69,8 @@ h1{
     animation:slideUp 1.2s ease-out forwards;
 
     text-shadow:
-    0 0 10px rgba(255,255,255,0.3),
-    0 0 20px rgba(88,101,242,0.5);
+    0 0 10px rgba(255, 157, 9, 0.3),
+    0 0 20px rgba(242, 88, 88, 0.5);
 }
 
 @keyframes slideUp{
@@ -88,7 +88,7 @@ h1{
 }
 
 h1:hover{
-    color: rgb(255, 217, 0);
+    color: rgb(255, 187, 0);
 }
 
 h2{
@@ -150,14 +150,18 @@ h2:hover{
 }
 
 .join-btn{
-    background:#f0e65b;
-    color:rgb(0, 0, 0);
+    background:#fff128;
+    color:rgba(0, 0, 0, 0.952);
     border:none;
     margin: 10px;
-    padding:15px 30px;
-    border-radius:50px;
-    font-size:20px;
+    padding:12px 40px;
+    border-radius:15px;
+    font-size:21px;
+    font-weight:bolder;
     cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    
 
     box-shadow:
     0 0 10px #fff700,
@@ -167,20 +171,61 @@ h2:hover{
 .join-btn:hover{
     transform:translateY(-3px) scale(1.05);
 }
+/* Moving Shine */
+
+.join-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60px;
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.8),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    animation:
+    shineMove 2.5s infinite;
+
+}
+
+@keyframes shineMove{
+
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:130%;
+    }
+
+}
 
 .Live-btn{
-    background:#01cf50;
-    color:rgb(255, 255, 255);
+    background:#00ee5b;
+    color:rgb(255, 0, 0);
     border:none;
     margin: 10px;
     padding:10px 30px;
-    border-radius:15px;
+    border-radius:10px;
     font-size:20px;
+    font-weight: bolder;
     cursor:pointer;
 
     box-shadow:
-    0 0 10px #0fff0fc7,
-    0 0 25px #0fff0fc7;
+    0 0 10px #00ee5b,
+    0 0 25px #00ee5b;
 }
 
 .rgb-glow{
