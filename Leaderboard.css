@@ -388,12 +388,12 @@ h2{
 
 table{
     width:100%;
-    table-layout:fixed;
+    table-layout:auto;
 }
 
 th,
 td{
-    padding:8px 3px;
+    padding:8px 1px;
     font-size:11px;
     word-break:break-word;
 }
