@@ -11,7 +11,7 @@ const tabs =
 document.querySelectorAll(".pos-btn");
 
 const isMobile =
-window.innerWidth <= 768;
+window.innerWidth <= 768-480;
 
 let selectedMarketPlayer = null;
 /* =====================
