@@ -402,12 +402,12 @@ td{
 
 th:nth-child(1),
 td:nth-child(1){
-    width:40px;
+    width:35px;
 }
 
 th:nth-child(2),
 td:nth-child(2){
-    width:110px;
+    width:120px;
 }
 
 th:nth-child(3),
