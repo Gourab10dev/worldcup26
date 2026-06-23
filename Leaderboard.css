@@ -387,15 +387,15 @@ h2{
 /* Table */
 
 table{
-    width:100%;
-    table-layout:auto;
+    width:auto;
+    margin: auto;
 }
 
 th,
 td{
-    padding:8px 1px;
+    padding:8px 8px;
     font-size:11px;
-    word-break:break-word;
+    white-space: nowrap;
 }
 
 /* Column widths */
