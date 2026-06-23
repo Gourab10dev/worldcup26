@@ -13,9 +13,6 @@ document.querySelectorAll(".pos-btn");
 const isMobile =
 window.innerWidth <= 768;
 
-const isMobile =
-window.innerWidth <= 480;
-
 let selectedMarketPlayer = null;
 /* =====================
 FORMATIONS
@@ -180,6 +177,14 @@ card.classList.add(
 
 selectedMarketPlayer = player;
 
+document
+.querySelectorAll(".player-card")
+.forEach(c =>
+c.classList.remove("selected-card")
+);
+
+card.classList.add("selected-card");
+
 });
 
 card.addEventListener(
@@ -243,6 +248,56 @@ tab.dataset.pos
 
 });
 
+/*----------------*/
+
+function setupSelectedPlayer(selectedPlayer){
+
+selectedPlayer.addEventListener("click", ()=>{
+
+if(captainMode){
+
+currentCaptain
+?.querySelector(".captain-badge")
+?.remove();
+
+const badge =
+document.createElement("div");
+
+badge.className = "captain-badge";
+badge.innerText = "C";
+
+selectedPlayer.appendChild(badge);
+
+currentCaptain = selectedPlayer;
+
+captainMode = false;
+
+return;
+}
+
+if(viceCaptainMode){
+
+currentViceCaptain
+?.querySelector(".vice-captain-badge")
+?.remove();
+
+const badge =
+document.createElement("div");
+
+badge.className = "vice-captain-badge";
+badge.innerText = "VC";
+
+selectedPlayer.appendChild(badge);
+
+currentViceCaptain = selectedPlayer;
+
+viceCaptainMode = false;
+}
+
+});
+
+}
+
 /* =====================
 DRAG DROP
 ===================== */
@@ -262,12 +317,12 @@ selectedMarketPlayer.name;
 const exists =
 [...document.querySelectorAll(".selected-player")]
 .some(player =>
-player.dataset.name === playerName);
+player.dataset.name === playerName
+);
 
 if(exists){
 
 alert("Player already selected!");
-
 return;
 
 }
@@ -278,6 +333,13 @@ data-name="${playerName}">
 <img src="${selectedMarketPlayer.img}">
 </div>
 `;
+
+const selectedPlayer =
+slot.querySelector(".selected-player");
+
+setupSelectedPlayer(selectedPlayer);
+
+selectedMarketPlayer = null;
 
 });
 
@@ -333,68 +395,7 @@ slot.addEventListener("drop", e => {
     const selectedPlayer =
 slot.querySelector(".selected-player");
 
-selectedPlayer.addEventListener("click", () => {
-
-    /* Captain */
-
-    if(captainMode){
-
-        if(currentCaptain){
-
-            currentCaptain
-            .querySelector(".captain-badge")
-            ?.remove();
-
-        }
-
-        const badge =
-        document.createElement("div");
-
-        badge.className =
-        "captain-badge";
-
-        badge.innerText = "C";
-
-        selectedPlayer.appendChild(badge);
-
-        currentCaptain =
-        selectedPlayer;
-
-        captainMode = false;
-
-        return;
-    }
-
-    /* Vice Captain */
-
-    if(viceCaptainMode){
-
-        if(currentViceCaptain){
-
-            currentViceCaptain
-            .querySelector(".vice-captain-badge")
-            ?.remove();
-
-        }
-
-        const badge =
-        document.createElement("div");
-
-        badge.className =
-        "vice-captain-badge";
-
-        badge.innerText = "VC";
-
-        selectedPlayer.appendChild(badge);
-
-        currentViceCaptain =
-        selectedPlayer;
-
-        viceCaptainMode = false;
-
-    }
-
-});
+setupSelectedPlayer(selectedPlayer);
 })}
 
 
