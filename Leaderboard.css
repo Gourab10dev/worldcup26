@@ -137,7 +137,7 @@ footer{
     box-shadow:
     0 -5px 20px rgba(255,215,0,0.1);
 
-    padding:12px;
+    padding:10px;
 
     text-align:center;
 
@@ -334,42 +334,105 @@ footer{
 
 @media (max-width:480px){
 
+/* Full page */
+
+html,
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Main container */
+
+.container{
+    width:100%;
+    padding:10px;
+    flex:1;
+}
+
+/* Logo */
+
 .logo{
-
-    width:110px;
+    width:120px;
+    display:block;
+    margin:20px auto;
 }
 
-h1{
-
-    font-size:1.3rem;
-}
+/* Heading */
 
 h2{
-
-    font-size:18px;
+    font-size:22px;
+    text-align:left;
+    margin:10px 0;
 }
+
+/* Leaderboard box */
 
 .leaderboard-container{
-
+    width:100%;
     padding:10px;
+    margin:0 auto;
     border-radius:12px;
+    overflow:hidden;
 }
 
-table{
+/* Table */
 
-    min-width:420px;
+table{
+    width:100%;
+    table-layout:fixed;
 }
 
 th,
 td{
+    padding:8px 4px;
+    font-size:12px;
+    word-break:break-word;
+}
 
-    padding:8px;
+/* Column widths */
+
+th:nth-child(1),
+td:nth-child(1){
+    width:40px;
+}
+
+th:nth-child(2),
+td:nth-child(2){
+    width:110px;
+}
+
+th:nth-child(3),
+td:nth-child(3){
+    width:60px;
+}
+
+th:nth-child(4),
+td:nth-child(4){
+    width:90px;
+}
+
+th:nth-child(5),
+td:nth-child(5){
+    width:50px;
+}
+
+/* Top 3 rows */
+
+.gold-row,
+.silver-row,
+.bronze-row{
     font-size:12px;
 }
 
-footer{
+/* Footer */
 
-    font-size:10px;
+footer{
+    width:100%;
+    margin-top:auto;
     padding:8px;
+    font-size:10px;
+    text-align:center;
 }
 }
