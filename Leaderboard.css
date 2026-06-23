@@ -393,9 +393,8 @@ table{
 
 th,
 td{
-    padding:8px 8px;
-    font-size:11px;
-    white-space: nowrap;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Column widths */
