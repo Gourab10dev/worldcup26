@@ -48,13 +48,13 @@ data.forEach((team,index)=>{
 let rowClass = "";
 
 if(index === 0){
-    rowClass = "gold-row";
+    row.ClassList.add("gold-row");
 }
 else if(index === 1){
-    rowClass = "silver-row";
+    row.ClassList.add("silver-row");
 }
 else if(index === 2){
-    rowClass = "bronze-row";
+    row.ClassList.add("bronze-row");
 }
 
 tbody.innerHTML += `
