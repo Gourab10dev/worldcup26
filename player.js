@@ -369,7 +369,7 @@ RW: [
 {
 name:"L.Messi",
 country:"Argentina",
-img:"chobi/.png"
+img:"chobi/messi.png"
 },
 
 {
