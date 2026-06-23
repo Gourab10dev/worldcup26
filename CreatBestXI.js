@@ -1,6 +1,3 @@
-
-
-
 const formationArea =
 document.getElementById("formationArea");
 
@@ -13,6 +10,10 @@ document.getElementById("playerMarket");
 const tabs =
 document.querySelectorAll(".pos-btn");
 
+const isMobile =
+window.innerWidth <= 768;
+
+let selectedMarketPlayer = null;
 /* =====================
 FORMATIONS
 ===================== */
@@ -159,6 +160,15 @@ card.innerHTML = `
 
 `;
 
+card.addEventListener("click", ()=>{
+
+if(!isMobile)
+return;
+
+selectedMarketPlayer = player;
+
+});
+
 card.addEventListener(
 "dragstart",
 ()=>{
@@ -225,6 +235,21 @@ DRAG DROP
 ===================== */
 
 function enableDrop(slot){
+
+if(isMobile){
+
+slot.addEventListener("click", ()=>{
+
+if(!selectedMarketPlayer)
+return;
+
+/* mobile selection code here */
+
+});
+
+return;
+
+}
 
 slot.addEventListener(
 "dragover",
