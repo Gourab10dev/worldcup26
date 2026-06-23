@@ -387,26 +387,27 @@ h2{
 /* Table */
 
 table{
-    width:auto;
-    margin: auto;
+    width:100%;
+    table-layout:fixed;
 }
 
 th,
 td{
-    padding-left: 0;
-    padding-right: 0;
+    padding:8px 1px;
+    font-size:11px;
+    word-break:break-word;
 }
 
 /* Column widths */
 
 th:nth-child(1),
 td:nth-child(1){
-    width:35px;
+    width:40px;
 }
 
 th:nth-child(2),
 td:nth-child(2){
-    width:120px;
+    width:110px;
 }
 
 th:nth-child(3),
